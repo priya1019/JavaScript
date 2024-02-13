@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body id="bd">
+        <header id="header">
+            <nav id="nv">
+                <ol class="c1">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">MORE</a></li>
+                </ol>
+            </nav>
+
+        </header>
+        <article id="javascript">
+            <h2 class="c1">About JAVASCRIPT</h2>
+            <div id="para" onmouseover="copypaste()">JavaScript is used to aplly<b>dynamism</b>on a webpage
+            <i>Just for test <a href="#">Demo Test</a></i>
+            <ol>
+                <li>Core</li><li>Advanced</li>
+            </ol>
+        </div>
+            <div id="para2">
+
+            </div>
+            <div id="para3">
+
+            </div>
+            <div class="c1">
+                <label>Male:<input type="radio" name="gender" id="m"></label>
+                <label>Female:<input type="radio" name="gender" id="f"></label>
+                <input type="text" id="fld1"onblur="valueAccess()">
+                <input type="text" id="fld2" onmouseover="test1()" onmouseout="test2()">
+
+            </div>
+
+        </article>
+        <button onclick="show()">Elements with same class, same tags, Same name</button>
+
+        <button onclick="showChilds()">Show Childs</button>
+        <button onclick="remChild()">Remove Child</button>
+        <button onclick="addChild()">Add Child</button>
+        <script src="MyFiles/Dom.js"></script>
+    </body>
+</html>

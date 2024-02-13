@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>first demo</title>
+    </head>
+    <body>
+        <img src="MyImages/nature.jpg" id="nature" alt="nature" height="230" width="400">
+        <script>
+            let imgnode=document.getElementById("nature");
+            let h=imgnode.height;
+            let w=imgnode.width;
+            console.log(h+" "+w);
+            setInterval(()=>setSize(),5000)
+            function setSize(){
+                h=h+100;
+                w=w+100;
+                console.log(h+" "+w);
+                imgnode.height=h;
+                imgnode.width=w;
+                imgnode.style.borderRadius=30
+                imgnode.src="MyImages/mdhoni.jpg";
+            }
+            </script>
+    </body>
+</html>
